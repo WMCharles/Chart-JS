@@ -114,3 +114,27 @@ new Chart("myPie", {
     }
   }
 })
+
+// Pie Chart
+
+var xValues = ["Italy", "France", "Spain", "USA", "Argentina"]
+var yValues = [55, 49, 44, 24, 15];
+var barColors = ["red", "green","blue","orange","brown"];
+
+new Chart("myDoughnut", {
+  type: "doughnut",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "World Wide Wine Production 2018"
+    }
+  }
+})
+
